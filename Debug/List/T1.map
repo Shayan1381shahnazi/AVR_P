@@ -1,0 +1,80 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x02A6      29
+t1                                                                                0x02C3      16
+t2                                                                                0x02D3      16
+t3                                                                                0x02E3      16
+b                                                                                 0x02F3       4
+ks0108_coord                                                                      0x02F7       3
+_seed                                                                             0x02FA       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+h                                                                                 R5           1
+m                                                                                 R4           1
+s                                                                                 R7           1
+a                                                                                 R8,R9        2
+wd                                                                                R6           1
+day                                                                               R11          1
+month                                                                             R10          1
+year                                                                              R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x003AF    320
+lm75_set_temp_G100                                                                0x004EF     15
+lm75_init                                                                         0x004FE     28
+lm75_temperature_10                                                               0x0051A     32
+rtc_init                                                                          0x0053A     27
+rtc_get_time                                                                      0x00555     24
+rtc_set_time                                                                      0x0056D     18
+rtc_get_date                                                                      0x0057F     27
+rtc_set_date                                                                      0x0059A     21
+ks0108_enable_G102                                                                0x005AF      4
+ks0108_disable_G102                                                               0x005B3      4
+ks0108_rdbus_G102                                                                 0x005B7      7
+ks0108_busy_G102                                                                  0x005BE     24
+ks0108_wrcmd_G102                                                                 0x005D6      6
+ks0108_setloc_G102                                                                0x005DC     18
+ks0108_gotoxp_G102                                                                0x005EE     15
+ks0108_nextx_G102                                                                 0x005FD     21
+ks0108_wrdata_G102                                                                0x00612      9
+ks0108_rddata_G102                                                                0x0061B      9
+ks0108_rdbyte_G102                                                                0x00624     11
+glcd_init                                                                         0x0062F    101
+glcd_clear                                                                        0x00694     38
+ks0108_wrmasked_G102                                                              0x006BA     59
+glcd_block                                                                        0x006F5    477
+glcd_clipx                                                                        0x008D2     21
+glcd_clipy                                                                        0x008E7     21
+glcd_imagesize                                                                    0x008FC     44
+glcd_getcharw_G103                                                                0x00928    111
+glcd_new_line_G103                                                                0x00997     20
+glcd_putchar                                                                      0x009AB     98
+glcd_outtextxy                                                                    0x00A0D     21
+glcd_putimagef                                                                    0x00A22     46
+glcd_moveto                                                                       0x00A50     13
+put_buff_G105                                                                     0x00A5D     58
+_ftoe_G105                                                                        0x00A97    210
+_print_G105                                                                       0x00B69    538
+sprintf                                                                           0x00D83     52
+bcd2bin                                                                           0x00DB7     13
+bin2bcd                                                                           0x00DC4     10
+memset                                                                            0x00DCE     16
+strcpyf                                                                           0x00DDE     13
+strlen                                                                            0x00DEB     12
+strlenf                                                                           0x00DF7     13
+glcd_getmask                                                                      0x00E04     11
+glcd_mappixcolor1bit                                                              0x00E0F     40
+glcd_readmem                                                                      0x00E37     31
+glcd_writemem                                                                     0x00E56     31
+ftrunc                                                                            0x00E75     49
+floor                                                                             0x00EA6     23
+ftoa                                                                              0x00EBD    155
